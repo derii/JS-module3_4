@@ -1,0 +1,68 @@
+body {
+	background: #c8c6c6;
+}
+h1, h2, h3, h4, h5, h6, p {
+	color: #232323;
+}
+.wrapper {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 2px solid #232323;
+	background: #fff;
+}
+form {
+	padding: 25px 0 60px 100px;
+}
+.test-title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+.answer-label {
+	display: block;
+	margin-left: 20px;
+}
+
+input.answer-checkbox {
+	-webkit-appearance:none;
+	width:14px;
+	height:14px;
+	border:2px solid #000;
+	outline:none;
+	margin-right:10px;
+	box-sizing:border-box;
+	display:inline-block;
+	background-color: #cfe2f3;
+}
+input.answer-checkbox:checked:before {
+	content:"";
+	display:block;
+	width:7px;
+	height:10px;
+	border:0 solid rgb(58, 153, 45);
+	border-width:0 4px 2px 0;
+	-webkit-transform:rotateZ(45deg);
+	margin:0 3px;
+	pointer-events:none;
+}
+.test-result-btn {
+	font-weight: bold;
+	margin-top: 50px;
+	background-color: #cfe1f5;
+	color: #000;
+	border-radius: 2px;
+	border: 3px solid #000;
+}
+.test-result-btn:hover,
+.test-result-btn:active,
+.test-result-btn:visited,
+.test-result-btn:link,
+.test-result-btn:focus {
+	background-color: #a7c5df !important;
+	border: 3px solid #000 !important;
+	color: #232323;
+}
+@media screen and (max-width: 479px) {
+	form {
+		padding: 15px 0 60px;
+	}
+}
